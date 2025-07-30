@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -45,6 +46,14 @@ fun LoginScreen() {
             text = "Ini Adalah Halaman Login",
             style = TextStyle(fontSize = 16.sp, color = Color.Gray)
         )
+        Spacer(modifier = Modifier.height(5.dp))
+
+        Image(
+            painter = painterResource(id = R.drawable.logo_umy),
+            contentDescription = "Logo Universitas",
+            modifier = Modifier.size(300.dp)
+        )
+
     }
 }
 
