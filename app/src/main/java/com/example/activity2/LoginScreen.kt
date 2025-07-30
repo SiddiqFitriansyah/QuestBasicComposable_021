@@ -90,7 +90,14 @@ fun LoginScreen() {
                 .border(4.dp, Color.White, CircleShape),
             tonalElevation = 6.dp
         ) {
-
+            Image(
+                painter = painterResource(id = R.drawable.Foto),
+                contentDescription = "Foto Profil",
+                modifier = Modifier
+                    .fillMaxSize()
+                    .clip(CircleShape),
+                alignment = Alignment.Center
+            )
         }
     }
 }
