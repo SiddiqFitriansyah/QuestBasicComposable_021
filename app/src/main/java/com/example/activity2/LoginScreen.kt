@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -19,6 +20,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -62,13 +64,15 @@ fun LoginScreen() {
             text = "Nama",
             fontSize = 16.sp,
             fontWeight = FontWeight.SemiBold,
+            fontStyle = FontStyle.Italic,
             color = Color.Blue
         )
 
         Text(
             text = "Siddiq Fitriansyah",
-            fontSize = 16.sp,
+            fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
+            fontStyle = FontStyle.Italic,
             color = Color.Magenta
         )
 
@@ -86,20 +90,19 @@ fun LoginScreen() {
         Surface(
             shape = CircleShape,
             modifier = Modifier
-                .size(350.dp)
+                .size(500.dp)
                 .border(4.dp, Color.White, CircleShape),
             tonalElevation = 6.dp
         ) {
             Image(
-                painter = painterResource(id = R.drawable.Foto),
+                painter = painterResource(id = R.drawable.foto),
                 contentDescription = "Foto Profil",
                 modifier = Modifier
                     .fillMaxSize()
                     .clip(CircleShape),
                 alignment = Alignment.Center
             )
-        }
-    }
+        }   }
 }
 
 
